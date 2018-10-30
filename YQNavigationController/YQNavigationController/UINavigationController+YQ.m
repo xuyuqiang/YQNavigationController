@@ -7,7 +7,7 @@
 //
 
 #import "UINavigationController+YQ.h"
-#import "UIViewController+YQ.h"
+#import "UIViewController+YQNavigationBar.h"
 #import <objc/runtime.h>
 
 static char *yqNavigationfullScreenPopGestureEnabledKey = "yqNavigationfullScreenPopGestureEnabledKey";
@@ -82,10 +82,10 @@ static char *yqNavigationfullScreenPopGestureEnabledKey = "yqNavigationfullScree
     [self yq_pushViewController:viewController animated:animated];
 }
 
-- (void)yq_popViewControllerAnimated:(BOOL)animated {
+- (UIViewController *)yq_popViewControllerAnimated:(BOOL)animated {
     UIViewController *popToVC = self.viewControllers[self.viewControllers.count - 2];
     [self yq_changeNavBarStatus:popToVC];
-    [self yq_popViewControllerAnimated:animated];
+    return [self yq_popViewControllerAnimated:animated];
 }
 
 - (NSArray<UIViewController *> *)yq_popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -93,10 +93,10 @@ static char *yqNavigationfullScreenPopGestureEnabledKey = "yqNavigationfullScree
     return [self yq_popToViewController:viewController animated:animated];
 }
 
-- (void)yq_popToRootViewControllerAnimated:(BOOL)animated {
+- (NSArray<UIViewController *> *)yq_popToRootViewControllerAnimated:(BOOL)animated {
     UIViewController *popToVC = self.viewControllers[0];
     [self yq_changeNavBarStatus:popToVC];
-    [self yq_popToRootViewControllerAnimated:animated];
+    return [self yq_popToRootViewControllerAnimated:animated];
 }
 
 //通过alpha值改变

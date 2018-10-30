@@ -27,10 +27,4 @@
 //    self.yq_NavBarTintColor = [UIColor blackColor];
 }
 
-- (void)btnClick {
-    TransparentViewController *vc = [[TransparentViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-
 @end

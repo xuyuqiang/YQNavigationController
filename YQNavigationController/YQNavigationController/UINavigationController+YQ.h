@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_END
 //1.侧滑有概率出现navigationBar 闪动的情况
 //2.侧滑过半，松开，动画有些生硬
 
+//不能设置setBackgroundImage，有些页面影响体验
+//设置黑色时，会有问题，先闪动成深黑色，然后结束再闪动成浅黑色
+
 //参考文章：
 //https://www.jianshu.com/p/0e4c759901b4 (iOS导航栏透明平滑过渡的简单实现)
 //https://www.jianshu.com/p/31f177158c9e (【iOS】让我们一次性解决导航栏的所有问题)

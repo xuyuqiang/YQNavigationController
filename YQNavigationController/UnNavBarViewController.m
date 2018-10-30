@@ -19,12 +19,6 @@
     // Do any additional setup after loading the view.
     self.yq_hidenNavBar = YES;
 }
-
-- (void)btnClick {
-    ViewController *vc = [[ViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
 /*
 #pragma mark - Navigation
 

@@ -21,6 +21,9 @@
 		80155DAC2188245800EC8F5B /* TransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAB2188245800EC8F5B /* TransparentViewController.m */; };
 		80155DAF218824FE00EC8F5B /* UnNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */; };
 		80155DB2218845DB00EC8F5B /* UIViewController+YQNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DB1218845DB00EC8F5B /* UIViewController+YQNavigationBar.m */; };
+		80155DBC2188585E00EC8F5B /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DBA2188585E00EC8F5B /* BaseWebViewController.m */; };
+		80155DBF21885B8A00EC8F5B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DBE21885B8A00EC8F5B /* TableViewController.m */; };
+		80155DC121885E4500EC8F5B /* eg.html in Resources */ = {isa = PBXBuildFile; fileRef = 80155DC021885E4400EC8F5B /* eg.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,11 @@
 		80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnNavBarViewController.m; sourceTree = "<group>"; };
 		80155DB0218845DB00EC8F5B /* UIViewController+YQNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YQNavigationBar.h"; sourceTree = "<group>"; };
 		80155DB1218845DB00EC8F5B /* UIViewController+YQNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YQNavigationBar.m"; sourceTree = "<group>"; };
+		80155DBA2188585E00EC8F5B /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		80155DBB2188585E00EC8F5B /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		80155DBD21885B8A00EC8F5B /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		80155DBE21885B8A00EC8F5B /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		80155DC021885E4400EC8F5B /* eg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = eg.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,11 @@
 				80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */,
 				80155DA72188236C00EC8F5B /* BaseViewController.h */,
 				80155DA82188236C00EC8F5B /* BaseViewController.m */,
+				80155DBB2188585E00EC8F5B /* BaseWebViewController.h */,
+				80155DBA2188585E00EC8F5B /* BaseWebViewController.m */,
+				80155DBD21885B8A00EC8F5B /* TableViewController.h */,
+				80155DBE21885B8A00EC8F5B /* TableViewController.m */,
+				80155DC021885E4400EC8F5B /* eg.html */,
 				80155D712188228100EC8F5B /* Main.storyboard */,
 				80155D742188228300EC8F5B /* Assets.xcassets */,
 				80155D762188228300EC8F5B /* LaunchScreen.storyboard */,
@@ -275,6 +288,7 @@
 			files = (
 				80155D782188228300EC8F5B /* LaunchScreen.storyboard in Resources */,
 				80155D752188228300EC8F5B /* Assets.xcassets in Resources */,
+				80155DC121885E4500EC8F5B /* eg.html in Resources */,
 				80155D732188228100EC8F5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80155DBF21885B8A00EC8F5B /* TableViewController.m in Sources */,
 				80155DB2218845DB00EC8F5B /* UIViewController+YQNavigationBar.m in Sources */,
 				80155D702188228100EC8F5B /* ViewController.m in Sources */,
 				80155DA62188233E00EC8F5B /* MainTabBarController.m in Sources */,
@@ -308,6 +323,7 @@
 				80155DA92188236C00EC8F5B /* BaseViewController.m in Sources */,
 				80155DAF218824FE00EC8F5B /* UnNavBarViewController.m in Sources */,
 				80155D6D2188228100EC8F5B /* AppDelegate.m in Sources */,
+				80155DBC2188585E00EC8F5B /* BaseWebViewController.m in Sources */,
 				80155DAC2188245800EC8F5B /* TransparentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

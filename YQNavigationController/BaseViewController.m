@@ -25,7 +25,7 @@
     
     UIBarButtonItem *myButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(rightClick)];
     self.navigationItem.rightBarButtonItem = myButton;
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
     btn.backgroundColor = [UIColor redColor];
@@ -45,8 +45,13 @@
 }
 
 - (void)btnClick {
-    BaseViewController *vc = [[BaseViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (_toVcString == nil) {
+        BaseViewController *vc = [[BaseViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        UIViewController *vc = [[NSClassFromString(_toVcString) alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)btn2Click {

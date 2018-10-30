@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+YQ.h"
+#import "UIViewController+YQNavigationBar.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
-
+@property (nonatomic,copy) NSString *toVcString;//类名
 @end
 
 NS_ASSUME_NONNULL_END
