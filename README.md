@@ -1,0 +1,2 @@
+# YQNavigationController
+通过alpha值改变实现隐藏导航栏
