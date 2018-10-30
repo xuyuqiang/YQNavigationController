@@ -1,12 +1,13 @@
 //
-//  UIViewController+YQ.h
-//  testNav2
+//  UIViewController+YQNavigationBar.h
+//  YQNavigationController
 //
-//  Created by Xuyuqiang on 2018/10/27.
+//  Created by Xuyuqiang on 2018/10/30.
 //  Copyright © 2018年 Xuyuqiang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol YQViewControllerShouldPop <NSObject>
@@ -16,8 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UIViewController (YQ)<YQViewControllerShouldPop>
-
+@interface UIViewController (YQNavigationBar)<YQViewControllerShouldPop>
 //背景透明度
 @property (nonatomic,strong) NSNumber *yq_NavBarAlpha; //默认是nil
 //按钮颜色
@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) UIColor *yq_NavBarTitleColor; //默认是nil
 
 @property (nonatomic,assign) BOOL yq_hidenNavBar; //默认是NO
+
 @end
 
 NS_ASSUME_NONNULL_END

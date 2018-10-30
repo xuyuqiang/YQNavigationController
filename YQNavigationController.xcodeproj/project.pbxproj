@@ -16,11 +16,11 @@
 		80155D852188228300EC8F5B /* YQNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D842188228300EC8F5B /* YQNavigationControllerTests.m */; };
 		80155D902188228300EC8F5B /* YQNavigationControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D8F2188228300EC8F5B /* YQNavigationControllerUITests.m */; };
 		80155DA2218822FB00EC8F5B /* UINavigationController+YQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */; };
-		80155DA3218822FB00EC8F5B /* UIViewController+YQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */; };
 		80155DA62188233E00EC8F5B /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA52188233E00EC8F5B /* MainTabBarController.m */; };
 		80155DA92188236C00EC8F5B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA82188236C00EC8F5B /* BaseViewController.m */; };
 		80155DAC2188245800EC8F5B /* TransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAB2188245800EC8F5B /* TransparentViewController.m */; };
 		80155DAF218824FE00EC8F5B /* UnNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */; };
+		80155DB2218845DB00EC8F5B /* UIViewController+YQNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DB1218845DB00EC8F5B /* UIViewController+YQNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,6 @@
 		80155D912188228300EC8F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YQ.m"; sourceTree = "<group>"; };
 		80155D9F218822FB00EC8F5B /* UINavigationController+YQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YQ.h"; sourceTree = "<group>"; };
-		80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YQ.m"; sourceTree = "<group>"; };
-		80155DA1218822FB00EC8F5B /* UIViewController+YQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YQ.h"; sourceTree = "<group>"; };
 		80155DA42188233E00EC8F5B /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		80155DA52188233E00EC8F5B /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		80155DA72188236C00EC8F5B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 		80155DAB2188245800EC8F5B /* TransparentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentViewController.m; sourceTree = "<group>"; };
 		80155DAD218824FE00EC8F5B /* UnNavBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnNavBarViewController.h; sourceTree = "<group>"; };
 		80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnNavBarViewController.m; sourceTree = "<group>"; };
+		80155DB0218845DB00EC8F5B /* UIViewController+YQNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YQNavigationBar.h"; sourceTree = "<group>"; };
+		80155DB1218845DB00EC8F5B /* UIViewController+YQNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YQNavigationBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +164,8 @@
 			children = (
 				80155D9F218822FB00EC8F5B /* UINavigationController+YQ.h */,
 				80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */,
-				80155DA1218822FB00EC8F5B /* UIViewController+YQ.h */,
-				80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */,
+				80155DB0218845DB00EC8F5B /* UIViewController+YQNavigationBar.h */,
+				80155DB1218845DB00EC8F5B /* UIViewController+YQNavigationBar.m */,
 			);
 			path = YQNavigationController;
 			sourceTree = "<group>";
@@ -300,8 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80155DB2218845DB00EC8F5B /* UIViewController+YQNavigationBar.m in Sources */,
 				80155D702188228100EC8F5B /* ViewController.m in Sources */,
-				80155DA3218822FB00EC8F5B /* UIViewController+YQ.m in Sources */,
 				80155DA62188233E00EC8F5B /* MainTabBarController.m in Sources */,
 				80155DA2218822FB00EC8F5B /* UINavigationController+YQ.m in Sources */,
 				80155D7B2188228300EC8F5B /* main.m in Sources */,

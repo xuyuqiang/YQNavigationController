@@ -1,12 +1,12 @@
 //
-//  UIViewController+YQ.m
-//  testNav2
+//  UIViewController+YQNavigationBar.m
+//  YQNavigationController
 //
-//  Created by Xuyuqiang on 2018/10/27.
+//  Created by Xuyuqiang on 2018/10/30.
 //  Copyright © 2018年 Xuyuqiang. All rights reserved.
 //
 
-#import "UIViewController+YQ.h"
+#import "UIViewController+YQNavigationBar.h"
 #import <objc/runtime.h>
 #import "UINavigationController+YQ.h"
 //定义常量 必须是C语言字符串
@@ -17,8 +17,7 @@ static char *yqNavBarTitleColorKey = "yqNavBarTitleColorKey";
 
 static char *yqNavBarHidenKey = "yqNavBarHidenKey";
 
-@implementation UIViewController (YQ)
-
+@implementation UIViewController (YQNavigationBar)
 +(void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -121,4 +120,5 @@ static char *yqNavBarHidenKey = "yqNavBarHidenKey";
 - (UIColor *)yq_NavBarTitleColor {
     return objc_getAssociatedObject(self, yqNavBarTitleColorKey);
 }
+
 @end
