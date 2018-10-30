@@ -34,7 +34,6 @@ NS_ASSUME_NONNULL_END
 //2.侧滑过半，松开，动画有些生硬
 
 //不能设置setBackgroundImage，有些页面影响体验
-//设置黑色时，会有问题，先闪动成深黑色，然后结束再闪动成浅黑色
 
 //参考文章：
 //https://www.jianshu.com/p/0e4c759901b4 (iOS导航栏透明平滑过渡的简单实现)

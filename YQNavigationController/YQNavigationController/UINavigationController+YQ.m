@@ -205,21 +205,21 @@ static char *yqNavigationfullScreenPopGestureEnabledKey = "yqNavigationfullScree
     if (self.navigationBar.subviews.count <= 0) {
         return;
     }
-    UIView *backgroundView = self.navigationBar.subviews.firstObject;
+    
+    // 导航栏背景透明度设置，设置错，会闪动
+    UIView *barBackgroundView = [[self.navigationBar subviews] objectAtIndex:0];// _UIBarBackground
+    UIImageView *backgroundImageView = [[barBackgroundView subviews] objectAtIndex:0];// UIImageView，//分割线
     if (self.navigationBar.isTranslucent) {
-        UIImageView *backgroundImageView = backgroundView.subviews.firstObject;//分割线
         if (backgroundImageView != nil && backgroundImageView.image != nil) {
-            backgroundImageView.alpha = navBarAlpha;
+            barBackgroundView.alpha = navBarAlpha;
         } else {
-            if (backgroundView.subviews.count >= 2) {
-                UIView *visualEffectView = backgroundView.subviews[1]; //
-                visualEffectView.alpha = navBarAlpha;
+            UIView *backgroundEffectView = [[barBackgroundView subviews] objectAtIndex:1];// UIVisualEffectView
+            if (backgroundEffectView != nil) {
+                backgroundEffectView.alpha = navBarAlpha;
             }
         }
-        
     } else {
-        //测试,当isTranslucent = NO时，alpha设置失效，下述方法不起作用
-        backgroundView.alpha = navBarAlpha;
+        barBackgroundView.alpha = navBarAlpha;
     }
     
     // 对导航栏下面那条线做处理
