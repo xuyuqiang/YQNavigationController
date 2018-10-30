@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80155D6D2188228100EC8F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D6C2188228100EC8F5B /* AppDelegate.m */; };
+		80155D702188228100EC8F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D6F2188228100EC8F5B /* ViewController.m */; };
+		80155D732188228100EC8F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80155D712188228100EC8F5B /* Main.storyboard */; };
+		80155D752188228300EC8F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80155D742188228300EC8F5B /* Assets.xcassets */; };
+		80155D782188228300EC8F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80155D762188228300EC8F5B /* LaunchScreen.storyboard */; };
+		80155D7B2188228300EC8F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D7A2188228300EC8F5B /* main.m */; };
+		80155D852188228300EC8F5B /* YQNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D842188228300EC8F5B /* YQNavigationControllerTests.m */; };
+		80155D902188228300EC8F5B /* YQNavigationControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D8F2188228300EC8F5B /* YQNavigationControllerUITests.m */; };
+		80155DA2218822FB00EC8F5B /* UINavigationController+YQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */; };
+		80155DA3218822FB00EC8F5B /* UIViewController+YQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */; };
+		80155DA62188233E00EC8F5B /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA52188233E00EC8F5B /* MainTabBarController.m */; };
+		80155DA92188236C00EC8F5B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DA82188236C00EC8F5B /* BaseViewController.m */; };
+		80155DAC2188245800EC8F5B /* TransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAB2188245800EC8F5B /* TransparentViewController.m */; };
+		80155DAF218824FE00EC8F5B /* UnNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80155D812188228300EC8F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80155D602188228100EC8F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80155D672188228100EC8F5B;
+			remoteInfo = YQNavigationController;
+		};
+		80155D8C2188228300EC8F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80155D602188228100EC8F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80155D672188228100EC8F5B;
+			remoteInfo = YQNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80155D682188228100EC8F5B /* YQNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80155D6B2188228100EC8F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80155D6C2188228100EC8F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80155D6E2188228100EC8F5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		80155D6F2188228100EC8F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80155D722188228100EC8F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80155D742188228300EC8F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80155D772188228300EC8F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80155D792188228300EC8F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80155D7A2188228300EC8F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80155D802188228300EC8F5B /* YQNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80155D842188228300EC8F5B /* YQNavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQNavigationControllerTests.m; sourceTree = "<group>"; };
+		80155D862188228300EC8F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80155D8B2188228300EC8F5B /* YQNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80155D8F2188228300EC8F5B /* YQNavigationControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQNavigationControllerUITests.m; sourceTree = "<group>"; };
+		80155D912188228300EC8F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YQ.m"; sourceTree = "<group>"; };
+		80155D9F218822FB00EC8F5B /* UINavigationController+YQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YQ.h"; sourceTree = "<group>"; };
+		80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YQ.m"; sourceTree = "<group>"; };
+		80155DA1218822FB00EC8F5B /* UIViewController+YQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YQ.h"; sourceTree = "<group>"; };
+		80155DA42188233E00EC8F5B /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		80155DA52188233E00EC8F5B /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		80155DA72188236C00EC8F5B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		80155DA82188236C00EC8F5B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		80155DAA2188245800EC8F5B /* TransparentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentViewController.h; sourceTree = "<group>"; };
+		80155DAB2188245800EC8F5B /* TransparentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentViewController.m; sourceTree = "<group>"; };
+		80155DAD218824FE00EC8F5B /* UnNavBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnNavBarViewController.h; sourceTree = "<group>"; };
+		80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnNavBarViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80155D652188228100EC8F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D7D2188228300EC8F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D882188228300EC8F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80155D5F2188228100EC8F5B = {
+			isa = PBXGroup;
+			children = (
+				80155D6A2188228100EC8F5B /* YQNavigationController */,
+				80155D832188228300EC8F5B /* YQNavigationControllerTests */,
+				80155D8E2188228300EC8F5B /* YQNavigationControllerUITests */,
+				80155D692188228100EC8F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80155D692188228100EC8F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80155D682188228100EC8F5B /* YQNavigationController.app */,
+				80155D802188228300EC8F5B /* YQNavigationControllerTests.xctest */,
+				80155D8B2188228300EC8F5B /* YQNavigationControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80155D6A2188228100EC8F5B /* YQNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				80155D9D218822E600EC8F5B /* YQNavigationController */,
+				80155D6B2188228100EC8F5B /* AppDelegate.h */,
+				80155D6C2188228100EC8F5B /* AppDelegate.m */,
+				80155DA42188233E00EC8F5B /* MainTabBarController.h */,
+				80155DA52188233E00EC8F5B /* MainTabBarController.m */,
+				80155D6E2188228100EC8F5B /* ViewController.h */,
+				80155D6F2188228100EC8F5B /* ViewController.m */,
+				80155DAA2188245800EC8F5B /* TransparentViewController.h */,
+				80155DAB2188245800EC8F5B /* TransparentViewController.m */,
+				80155DAD218824FE00EC8F5B /* UnNavBarViewController.h */,
+				80155DAE218824FE00EC8F5B /* UnNavBarViewController.m */,
+				80155DA72188236C00EC8F5B /* BaseViewController.h */,
+				80155DA82188236C00EC8F5B /* BaseViewController.m */,
+				80155D712188228100EC8F5B /* Main.storyboard */,
+				80155D742188228300EC8F5B /* Assets.xcassets */,
+				80155D762188228300EC8F5B /* LaunchScreen.storyboard */,
+				80155D792188228300EC8F5B /* Info.plist */,
+				80155D7A2188228300EC8F5B /* main.m */,
+			);
+			path = YQNavigationController;
+			sourceTree = "<group>";
+		};
+		80155D832188228300EC8F5B /* YQNavigationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				80155D842188228300EC8F5B /* YQNavigationControllerTests.m */,
+				80155D862188228300EC8F5B /* Info.plist */,
+			);
+			path = YQNavigationControllerTests;
+			sourceTree = "<group>";
+		};
+		80155D8E2188228300EC8F5B /* YQNavigationControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80155D8F2188228300EC8F5B /* YQNavigationControllerUITests.m */,
+				80155D912188228300EC8F5B /* Info.plist */,
+			);
+			path = YQNavigationControllerUITests;
+			sourceTree = "<group>";
+		};
+		80155D9D218822E600EC8F5B /* YQNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				80155D9F218822FB00EC8F5B /* UINavigationController+YQ.h */,
+				80155D9E218822FB00EC8F5B /* UINavigationController+YQ.m */,
+				80155DA1218822FB00EC8F5B /* UIViewController+YQ.h */,
+				80155DA0218822FB00EC8F5B /* UIViewController+YQ.m */,
+			);
+			path = YQNavigationController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80155D672188228100EC8F5B /* YQNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80155D942188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationController" */;
+			buildPhases = (
+				80155D642188228100EC8F5B /* Sources */,
+				80155D652188228100EC8F5B /* Frameworks */,
+				80155D662188228100EC8F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQNavigationController;
+			productName = YQNavigationController;
+			productReference = 80155D682188228100EC8F5B /* YQNavigationController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80155D7F2188228300EC8F5B /* YQNavigationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80155D972188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationControllerTests" */;
+			buildPhases = (
+				80155D7C2188228300EC8F5B /* Sources */,
+				80155D7D2188228300EC8F5B /* Frameworks */,
+				80155D7E2188228300EC8F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80155D822188228300EC8F5B /* PBXTargetDependency */,
+			);
+			name = YQNavigationControllerTests;
+			productName = YQNavigationControllerTests;
+			productReference = 80155D802188228300EC8F5B /* YQNavigationControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80155D8A2188228300EC8F5B /* YQNavigationControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80155D9A2188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationControllerUITests" */;
+			buildPhases = (
+				80155D872188228300EC8F5B /* Sources */,
+				80155D882188228300EC8F5B /* Frameworks */,
+				80155D892188228300EC8F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80155D8D2188228300EC8F5B /* PBXTargetDependency */,
+			);
+			name = YQNavigationControllerUITests;
+			productName = YQNavigationControllerUITests;
+			productReference = 80155D8B2188228300EC8F5B /* YQNavigationControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80155D602188228100EC8F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Xuyuqiang;
+				TargetAttributes = {
+					80155D672188228100EC8F5B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					80155D7F2188228300EC8F5B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 80155D672188228100EC8F5B;
+					};
+					80155D8A2188228300EC8F5B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 80155D672188228100EC8F5B;
+					};
+				};
+			};
+			buildConfigurationList = 80155D632188228100EC8F5B /* Build configuration list for PBXProject "YQNavigationController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80155D5F2188228100EC8F5B;
+			productRefGroup = 80155D692188228100EC8F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80155D672188228100EC8F5B /* YQNavigationController */,
+				80155D7F2188228300EC8F5B /* YQNavigationControllerTests */,
+				80155D8A2188228300EC8F5B /* YQNavigationControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80155D662188228100EC8F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80155D782188228300EC8F5B /* LaunchScreen.storyboard in Resources */,
+				80155D752188228300EC8F5B /* Assets.xcassets in Resources */,
+				80155D732188228100EC8F5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D7E2188228300EC8F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D892188228300EC8F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80155D642188228100EC8F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80155D702188228100EC8F5B /* ViewController.m in Sources */,
+				80155DA3218822FB00EC8F5B /* UIViewController+YQ.m in Sources */,
+				80155DA62188233E00EC8F5B /* MainTabBarController.m in Sources */,
+				80155DA2218822FB00EC8F5B /* UINavigationController+YQ.m in Sources */,
+				80155D7B2188228300EC8F5B /* main.m in Sources */,
+				80155DA92188236C00EC8F5B /* BaseViewController.m in Sources */,
+				80155DAF218824FE00EC8F5B /* UnNavBarViewController.m in Sources */,
+				80155D6D2188228100EC8F5B /* AppDelegate.m in Sources */,
+				80155DAC2188245800EC8F5B /* TransparentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D7C2188228300EC8F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80155D852188228300EC8F5B /* YQNavigationControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80155D872188228300EC8F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80155D902188228300EC8F5B /* YQNavigationControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80155D822188228300EC8F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80155D672188228100EC8F5B /* YQNavigationController */;
+			targetProxy = 80155D812188228300EC8F5B /* PBXContainerItemProxy */;
+		};
+		80155D8D2188228300EC8F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80155D672188228100EC8F5B /* YQNavigationController */;
+			targetProxy = 80155D8C2188228300EC8F5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80155D712188228100EC8F5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80155D722188228100EC8F5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80155D762188228300EC8F5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80155D772188228300EC8F5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80155D922188228300EC8F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80155D932188228300EC8F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80155D952188228300EC8F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80155D962188228300EC8F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80155D982188228300EC8F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQNavigationController.app/YQNavigationController";
+			};
+			name = Debug;
+		};
+		80155D992188228300EC8F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQNavigationController.app/YQNavigationController";
+			};
+			name = Release;
+		};
+		80155D9B2188228300EC8F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQNavigationController;
+			};
+			name = Debug;
+		};
+		80155D9C2188228300EC8F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 728HT872ZE;
+				INFOPLIST_FILE = YQNavigationControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.YQNavigationControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQNavigationController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80155D632188228100EC8F5B /* Build configuration list for PBXProject "YQNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80155D922188228300EC8F5B /* Debug */,
+				80155D932188228300EC8F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80155D942188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80155D952188228300EC8F5B /* Debug */,
+				80155D962188228300EC8F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80155D972188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80155D982188228300EC8F5B /* Debug */,
+				80155D992188228300EC8F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80155D9A2188228300EC8F5B /* Build configuration list for PBXNativeTarget "YQNavigationControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80155D9B2188228300EC8F5B /* Debug */,
+				80155D9C2188228300EC8F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80155D602188228100EC8F5B /* Project object */;
+}
